@@ -1,0 +1,77 @@
+
+body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 20px;
+        background-color: lightblue;
+      }
+      
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      form {
+        display: flex;
+        flex-direction: column;
+        background-color: lightgray;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        width: 300px;
+        text-align: center;
+      }
+
+      h2 {
+        margin-bottom: 20px;
+      }
+
+      fieldset {
+        display: inline-block;
+        vertical-align: top;
+        height: 150px;
+        margin: 5px;
+        padding: 20px;
+        border: 1px solid darkgrey;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      input[type="text"] {
+        width: 80px;
+        padding: 5px 10px;
+        font-size: 14px;
+        border-radius: 5px;
+        border: 1px solid lightgray;
+      }
+
+      label {
+        display: inline-block;
+        width: 110px;
+        font-size: 14px;
+        margin-right: 20px;
+        text-align: left;
+      }
+
+      input[type="radio"] {
+        display: inline-block;
+        margin-right: 10px;
+        
+      }
+
+      button {
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: lightblue;
+        color: white;
+        font-size: 14px;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: blue;
+      }

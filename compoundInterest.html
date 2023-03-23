@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Compound Interest Calculator</title>
+        <script src="compoundInterestScript.js" type="text/javascript"></script>
+        <link href="compoundInterestStyle.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <h2>Compound Interest Calculator</h2>
+                <fieldset>
+                    <legend>Loan Preparation</legend>
+                    <label>Principal:</label>
+                    <input type="text" id="principal" value="0.00"><br><br>
+                    <label>Interest Rate:</label>
+                    <input type="text" id="interestRate" value="0.00"><br><br>
+                    <label>Periods (years):</label>
+                    <input type="text" id="periods"><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Compound Frequency</legend>
+                    <input type="radio" name="compoundFrequency" id="monthly" value="12">
+                    <label>Monthly</label><br><br>
+                    <input type="radio" name="compoundFrequency" id="quarterly" value="4">
+                    <label>Quarterly</label><br><br>
+                    <input type="radio" name="compoundFrequency" id="semiannually" value="2">
+                    <label>Semi-Annually</label><br><br>
+                    <input type="radio" name="compoundFrequency" id="annually" value="1">
+                    <label>Annually</label>
+                </fieldset>
+
+                <fieldset style="height: 80px">
+                    <legend>Results</legend>
+                    <label>Interest Earned:</label>
+                    <input type="text" id="interestEarned" value="0.00" readonly>
+                    <label>Future Value:</label>
+                    <input type="text" id="futureValue" value="0.00" readonly>
+
+                </fieldset><br>
+                <button type="button" onclick="calculate()">Calculate</button>
+                <button type="reset" >Clear</button>
+            </form>
+        </div>
+
+    </body>
+</html>
